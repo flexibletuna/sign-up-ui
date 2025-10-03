@@ -1,0 +1,92 @@
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('/02_login_project/bcg-1.jpg') no-repeat center center / cover fixed;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* animation */
+        animation: bg-pan 20s ease-in-out infinite alternate;
+    font-family: "Sora";
+}
+
+/* keyframes to "morph" position */
+@keyframes bg-pan {
+  0%   { background-position: center center; }
+  50%  { background-position: center top; }
+  100% { background-position: center center; }
+}
+
+.card {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    width: 500px;
+}
+
+h2 {
+    color: rgba(240, 240, 240, 0.65);
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: 
+        typing 6s steps(13, end) infinite, 
+        blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  0%   { width: 0ch; }
+  40%  { width: 10ch; }   /* fully typed */
+  60%  { width: 10ch; }   /* pause */
+  100% { width: 0ch; }    /* erase */
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    background-color: transparent;
+}
+
+.name-row {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px; 
+}
+
+.name-row input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+button {
+    background-color: #1b81da;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #0741ac;
+}
