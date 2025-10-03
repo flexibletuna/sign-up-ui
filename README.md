@@ -4,6 +4,5 @@ A responsive login/signup card UI built with HTML and CSS. Features a glassmorph
 Background image from: https://www.peakpx.com/en/hd-wallpaper-desktop-kxviw
 
 
-
-https://github.com/user-attachments/assets/6a608bba-8963-4a47-b5e5-b5febfe238cd
+![GIF](https://github.com/user-attachments/assets/8e40f01f-2d7e-4e92-a9fd-0f26d7acc160)
 
